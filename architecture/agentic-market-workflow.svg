@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="880" viewBox="0 0 1400 880" role="img" aria-labelledby="title desc">
+<title id="title">Bhoomi Market Intelligence agentic workflow</title><desc id="desc">Farmer input flows through orchestration, market retrieval, mandi comparison, net-income calculation, trend and storage evaluation, explanation, consent gate and farmer decision.</desc>
+<defs><style>.t{font-family:Inter,Arial,sans-serif;fill:#173d2b}.h{font-family:Inter,Arial,sans-serif;fill:#fff;font-weight:700;font-size:23px}.b{font-family:Inter,Arial,sans-serif;fill:#234d34;font-size:21px}.s{font-family:Inter,Arial,sans-serif;fill:#56745c;font-size:18px}.a{stroke:#4e8158;stroke-width:4;fill:none;marker-end:url(#m)}</style><marker id="m" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0 L10 6 L0 12Z" fill="#4e8158"/></marker></defs>
+<rect width="1400" height="880" rx="28" fill="#fbfcf7"/>
+<text x="700" y="66" class="t" text-anchor="middle" font-size="38" font-weight="700">BHOOMI MARKET INTELLIGENCE · AGENTIC WORKFLOW</text>
+<text x="700" y="104" class="s" text-anchor="middle">Compare · calculate · explain · obtain consent · leave the decision to the farmer</text>
+<g>
+<rect x="440" y="145" width="520" height="92" rx="18" fill="#24583b"/><text x="700" y="183" text-anchor="middle" class="h">1 · FARMER INPUT</text><text x="700" y="213" text-anchor="middle" fill="#fff" font-family="Arial" font-size="18">Crop · variety · quantity · location · harvest context</text>
+<path class="a" d="M700 240 V280"/>
+<rect x="440" y="285" width="520" height="82" rx="18" fill="#6a9b55"/><text x="700" y="335" text-anchor="middle" class="h">2 · BHOOMI AGENT ORCHESTRATOR</text>
+<path class="a" d="M700 370 V410"/>
+<rect x="440" y="415" width="520" height="82" rx="18" fill="#8aa96c"/><text x="700" y="465" text-anchor="middle" class="h">3 · RETRIEVE &amp; COMPARE MANDIS</text>
+<path class="a" d="M700 500 V540"/>
+<rect x="440" y="545" width="520" height="82" rx="18" fill="#a66d42"/><text x="700" y="595" text-anchor="middle" class="h">4 · CALCULATE NET RETURN</text>
+<path class="a" d="M700 630 V670"/>
+<rect x="440" y="675" width="520" height="82" rx="18" fill="#6a9b55"/><text x="700" y="725" text-anchor="middle" class="h">5 · EVALUATE TREND &amp; STORAGE</text>
+<path class="a" d="M700 760 V790"/>
+<text x="700" y="830" text-anchor="middle" class="b">Explain options, assumptions and uncertainty → Farmer chooses</text>
+<path d="M440 326 H240 V456" class="a"/><rect x="70" y="455" width="300" height="120" rx="16" fill="#f5f8f1" stroke="#a8c2a7" stroke-width="2"/><text x="220" y="495" class="b" text-anchor="middle">Data safeguards</text><text x="220" y="530" class="s" text-anchor="middle">Freshness · missing data</text><text x="220" y="555" class="s" text-anchor="middle">forecast sufficiency</text>
+<path d="M960 715 H1150 V585" class="a"/><rect x="1030" y="455" width="300" height="130" rx="16" fill="#f5f8f1" stroke="#a8c2a7" stroke-width="2"/><text x="1180" y="495" class="b" text-anchor="middle">Consent gate</text><text x="1180" y="530" class="s" text-anchor="middle">Farmer approval required</text><text x="1180" y="555" class="s" text-anchor="middle">before provider enquiry</text>
+</g></svg>
