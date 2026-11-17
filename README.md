@@ -98,7 +98,7 @@ Explore the PRAKRUTI VIKAAS website: **[prakrutivikaas.vercel.app](https://prakr
 
 The following reference diagram illustrates the app-to-service flow for mandi and related government information sources. It is an integration architecture, not a claim that every listed portal exposes a public API. Confirm API availability, permissions, credentials, response fields and timestamps before enabling a production integration.
 
-![PRAKRUTI VIKAAS government data API integration architecture](assets/mandi-government-api-architecture.jpg)
+![PRAKRUTI VIKAAS government data API integration architecture](assets/government-data-api-integration.svg)
 
 ## Architecture diagrams
 
