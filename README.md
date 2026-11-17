@@ -158,12 +158,13 @@ These are report-recorded implementation figures, not an independent certificati
 - Require farmer approval before provider enquiries or external coordination.
 - Financial and credit-scheme information is informational; the app does not originate or approve loans.
 
-## Repository structure
+## Repository contents
+
+This repository is intentionally maintained as a **public project showcase and technical documentation hub**. The Android application source code is not published here.
 
 ```text
 prakruti-vikaas-project/
 ├── README.md
-├── LICENSE
 ├── .gitignore
 ├── CONTRIBUTING.md
 ├── docs/
@@ -174,19 +175,22 @@ prakruti-vikaas-project/
 │   ├── API_AND_CONFIGURATION.md
 │   ├── PRIVACY_AND_SECURITY.md
 │   └── TESTING.md
-├── architecture/
-│   └── diagrams/
-├── screenshots/
-└── app/                 # Add the actual Android Studio project source here
+└── architecture/
+    ├── system-architecture.svg
+    └── agentic-market-workflow.svg
 ```
 
-Only folders and files that contain actual project assets should be committed. The Android source is not included in this initial documentation commit; add the real Android Studio project when ready.
+The repository helps reviewers, mentors and collaborators understand the product, architecture, workflows, technical approach and validation status without exposing the private implementation.
 
-## Setup
+## Project access and demonstration
 
-This repository currently contains project documentation. To build the Android app, add the actual Android Studio project source and follow its Gradle/Android Studio setup instructions.
+- **Source code:** Not publicly shared in this repository.
+- **Application walkthrough:** Add a link to a demonstration video when available.
+- **Screenshots:** Add genuine screenshots from the running application when available.
+- **Presentation:** Add the final hackathon pitch deck or its share link when ready.
+- **APK:** Share a release or download link only when a tested build is ready and it is appropriate to distribute.
 
-Do not paste secrets into source files. Store development credentials in local, ignored configuration and load them using the app's secure configuration approach. Provide placeholder names and setup steps in documentation, never actual keys.
+This repository is documentation-only; it does not provide a public Android build or developer setup instructions. Do not publish API keys, signing credentials, private farmer data or internal configuration here.
 
 ## Roadmap
 
