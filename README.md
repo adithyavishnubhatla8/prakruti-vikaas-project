@@ -100,6 +100,14 @@ The following reference diagram illustrates the app-to-service flow for mandi an
 
 ![PRAKRUTI VIKAAS government data API integration architecture](assets/government-data-api-integration.svg)
 
+## Backend core system architecture
+
+The diagram below presents the logical backend and integration architecture for PRAKRUTI VIKAAS 3.0, including the Android client boundary, API gateway, application services, Bhoomi AI orchestration, external agricultural data sources, local and optional remote persistence, processing pipeline, and security controls.
+
+It is an architectural reference: optional infrastructure such as a remote database, Redis, message queue or cloud deployment target must not be interpreted as currently deployed unless independently verified in the running project.
+
+![PRAKRUTI VIKAAS backend core system architecture](architecture/backend-core-system-architecture.svg)
+
 ## Architecture diagrams
 
 ### System architecture
