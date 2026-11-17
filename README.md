@@ -3,6 +3,8 @@
 
 **Developed & Designed by Adithya Vishnubhatla**
 
+🌐 **Live Website:** [https://prakrutivikaas.vercel.app/](https://prakrutivikaas.vercel.app/)
+
 PRAKRUTI VIKAAS is an Android-first agricultural intelligence companion that brings crop guidance, farm records, weather information, soil and water tools, and market decision support into one farmer-focused application.
 
 > **Hackathon focus:** Help farmers make better-informed selling decisions by comparing nearby markets, estimating net returns, evaluating price trends, and considering storage alternatives — while keeping the farmer in control.
@@ -87,6 +89,16 @@ flowchart TD
     J --> L[Farmer decides]
     K --> L
 ```
+
+## Live project website
+
+Explore the PRAKRUTI VIKAAS website: **[prakrutivikaas.vercel.app](https://prakrutivikaas.vercel.app/)**
+
+## Government data API integration architecture
+
+The following reference diagram illustrates the app-to-service flow for mandi and related government information sources. It is an integration architecture, not a claim that every listed portal exposes a public API. Confirm API availability, permissions, credentials, response fields and timestamps before enabling a production integration.
+
+![PRAKRUTI VIKAAS government data API integration architecture](assets/mandi-government-api-architecture.jpg)
 
 ## Architecture diagrams
 
