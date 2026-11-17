@@ -88,6 +88,16 @@ flowchart TD
     K --> L
 ```
 
+## Architecture diagrams
+
+### System architecture
+
+![PRAKRUTI VIKAAS system architecture](architecture/system-architecture.svg)
+
+### Agentic market workflow
+
+![Bhoomi Market Intelligence agentic workflow](architecture/agentic-market-workflow.svg)
+
 ## System architecture
 
 ```mermaid
