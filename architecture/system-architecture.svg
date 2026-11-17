@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920" role="img" aria-labelledby="title desc">
+<title id="title">PRAKRUTI VIKAAS system architecture</title><desc id="desc">Layered Android agricultural intelligence architecture showing UI, MVVM presentation, domain engines, local data and external integrations, with farmer-facing outputs.</desc>
+<defs><style>
+.t{font-family:Inter,Arial,sans-serif;fill:#173d2b}.sub{font-family:Inter,Arial,sans-serif;fill:#52715b;font-size:21px}.box{fill:#f5f8f1;stroke:#a8c2a7;stroke-width:2}.head{font-family:Inter,Arial,sans-serif;fill:#fff;font-size:25px;font-weight:700}.body{font-family:Inter,Arial,sans-serif;fill:#214a33;font-size:21px}.small{font-family:Inter,Arial,sans-serif;fill:#45654d;font-size:18px}.arr{stroke:#4e8158;stroke-width:4;fill:none;marker-end:url(#m)}
+</style><marker id="m" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0 L10 6 L0 12Z" fill="#4e8158"/></marker></defs>
+<rect width="1400" height="920" rx="28" fill="#fbfcf7"/>
+<text x="700" y="64" text-anchor="middle" font-size="38" font-weight="700" class="t">PRAKRUTI VIKAAS · SYSTEM ARCHITECTURE</text>
+<text x="700" y="100" text-anchor="middle" class="sub">Android-first · offline-aware · farmer-controlled intelligence</text>
+<rect x="90" y="140" width="1220" height="128" rx="18" fill="#24583b"/>
+<text x="125" y="180" class="head">ANDROID APPLICATION · PRESENTATION</text>
+<g fill="#fff" font-family="Inter,Arial,sans-serif" font-size="21"><text x="145" y="226">Home &amp; Smart Farm</text><text x="440" y="226">Bhoomi AI / Scanner</text><text x="760" y="226">Market Intelligence</text><text x="1060" y="226">Compose UI</text></g>
+<path class="arr" d="M700 270 V315"/>
+<rect x="90" y="320" width="1220" height="118" rx="18" class="box"/>
+<rect x="90" y="320" width="1220" height="48" rx="18" fill="#6a9b55"/>
+<text x="125" y="353" class="head">PRESENTATION LOGIC · MVVM</text>
+<text x="145" y="408" class="body">ViewModels</text><text x="430" y="408" class="body">UI state &amp; navigation</text><text x="850" y="408" class="body">Scheduled advisory entry points</text>
+<path class="arr" d="M700 440 V485"/>
+<rect x="90" y="490" width="1220" height="138" rx="18" class="box"/>
+<rect x="90" y="490" width="1220" height="48" rx="18" fill="#3d7950"/>
+<text x="125" y="523" class="head">DOMAIN LAYER · BUSINESS RULES</text>
+<text x="145" y="578" class="body">Crop &amp; farm computation engines</text><text x="590" y="578" class="body">Finance / water / market calculations</text><text x="1050" y="578" class="body">BhoomiAgentOrchestrator</text>
+<path class="arr" d="M700 630 V675"/>
+<rect x="90" y="680" width="580" height="150" rx="18" class="box"/>
+<rect x="90" y="680" width="580" height="48" rx="18" fill="#8aa96c"/>
+<text x="120" y="713" class="head">LOCAL DATA &amp; OFFLINE PATH</text>
+<text x="125" y="768" class="body">Repositories · Room / SQLite</text><text x="125" y="802" class="small">Cache · DataStore · offline records</text>
+<rect x="730" y="680" width="580" height="150" rx="18" class="box"/>
+<rect x="730" y="680" width="580" height="48" rx="18" fill="#a66d42"/>
+<text x="760" y="713" class="head">EXTERNAL INTEGRATIONS</text>
+<text x="765" y="768" class="body">Gemini · Open-Meteo · Fused Location</text><text x="765" y="802" class="small">Configured mandi / provider feeds · validate live status</text>
+<path class="arr" d="M390 680 V650 H610 V630"/>
+<path class="arr" d="M1015 680 V650 H790 V630"/>
+<text x="700" y="875" text-anchor="middle" class="small">Outputs: alerts · crop guidance · market comparison · net-income estimates · explainable recommendations</text>
+</svg>
