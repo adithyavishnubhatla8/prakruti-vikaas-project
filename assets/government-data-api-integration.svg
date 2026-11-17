@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-labelledby="title desc">
+<title id="title">PRAKRUTI VIKAAS — Government Data API Integration</title>
+<desc id="desc">Reference architecture from the PRAKRUTI VIKAAS Android application through a secure API integration layer to government and agricultural data sources, followed by normalization, quality checks and farmer-focused market intelligence outputs.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf7"/><stop offset="1" stop-color="#f1f7e9"/></linearGradient>
+ <linearGradient id="green" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#164b2c"/><stop offset="1" stop-color="#267040"/></linearGradient>
+ <style>
+ .title{font:700 42px Arial,sans-serif;fill:#164b2c}.sub{font:600 21px Arial,sans-serif;fill:#365c3d}
+ .head{font:700 24px Arial,sans-serif;fill:#fff}.label{font:700 21px Arial,sans-serif;fill:#17452a}
+ .body{font:19px Arial,sans-serif;fill:#263d2d}.small{font:16px Arial,sans-serif;fill:#49634c}
+ .source{font:700 20px Arial,sans-serif;fill:#17452a}.line{stroke:#367849;stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+ .card{fill:#fff;stroke:#9fbea0;stroke-width:2}.pale{fill:#edf5df;stroke:#b7cea7;stroke-width:2}
+ </style>
+ <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#367849"/></marker>
+</defs>
+<rect width="1600" height="1040" fill="url(#bg)"/>
+<path d="M0 0H1600V16H0Z" fill="#78a84d"/>
+<g fill="#dcebc9"><path d="M0 90C90 45 130 40 190 0H0Z"/><path d="M1600 90C1510 45 1470 40 1410 0H1600Z"/></g>
+<text x="800" y="70" text-anchor="middle" class="title">PRAKRUTI VIKAAS</text>
+<rect x="200" y="100" width="1200" height="70" rx="22" fill="url(#green)"/>
+<text x="800" y="146" text-anchor="middle" class="head" style="font-size:31px">GOVERNMENT DATA API INTEGRATION</text>
+<rect x="210" y="185" width="1180" height="66" rx="18" class="pale"/>
+<text x="800" y="212" text-anchor="middle" class="label">REFERENCE INTEGRATION ARCHITECTURE · VALIDATE ENDPOINT ACCESS BEFORE PRODUCTION</text>
+<text x="800" y="236" text-anchor="middle" class="small">Not every government portal exposes a public API. Confirm access, credentials, terms and response formats.</text>
+
+<!-- Main application -->
+<rect x="35" y="300" width="285" height="510" rx="24" class="card"/>
+<rect x="35" y="300" width="285" height="70" rx="22" fill="url(#green)"/>
+<text x="177" y="344" text-anchor="middle" class="head">FARMER / ANDROID APP</text>
+<rect x="115" y="400" width="125" height="185" rx="22" fill="#184f30" stroke="#9bc68a" stroke-width="5"/>
+<rect x="126" y="420" width="103" height="145" rx="12" fill="#f5f9ed"/>
+<path d="M150 535Q174 488 204 535" fill="none" stroke="#68a449" stroke-width="6"/>
+<path d="M176 508Q166 482 147 481Q151 507 176 508M176 508Q180 480 206 471Q205 499 176 508" fill="#3b8b46"/>
+<text x="177" y="455" text-anchor="middle" class="label" style="font-size:16px">PRAKRUTI</text>
+<text x="177" y="477" text-anchor="middle" class="label" style="font-size:16px">VIKAAS</text>
+<g class="body"><circle cx="66" cy="635" r="6" fill="#267040"/><text x="84" y="642">Kotlin · Jetpack Compose</text><circle cx="66" cy="685" r="6" fill="#267040"/><text x="84" y="692">Crop · quantity · location</text><circle cx="66" cy="735" r="6" fill="#267040"/><text x="84" y="742">Mandi rates · net income</text><text x="84" y="770">Sell / Wait / Store</text></g>
+
+<!-- Secure gateway -->
+<rect x="365" y="300" width="335" height="510" rx="24" class="card"/>
+<rect x="365" y="300" width="335" height="70" rx="22" fill="url(#green)"/>
+<text x="532" y="344" text-anchor="middle" class="head">SECURE API LAYER</text>
+<rect x="390" y="395" width="285" height="95" rx="15" class="pale"/>
+<text x="532" y="430" text-anchor="middle" class="label">Server-side credentials</text>
+<text x="532" y="461" text-anchor="middle" class="small">Keep API secrets out of the app</text>
+<g class="body">
+<circle cx="405" cy="535" r="6" fill="#267040"/><text x="425" y="542">Authentication &amp; rate limits</text>
+<circle cx="405" cy="585" r="6" fill="#267040"/><text x="425" y="592">Request validation &amp; retries</text>
+<circle cx="405" cy="635" r="6" fill="#267040"/><text x="425" y="642">Response parsing &amp; unit mapping</text>
+<circle cx="405" cy="685" r="6" fill="#267040"/><text x="425" y="692">Source &amp; timestamp tracking</text>
+<circle cx="405" cy="735" r="6" fill="#267040"/><text x="425" y="742">Error handling &amp; safe caching</text>
+</g>
+
+<!-- Sources -->
+<rect x="745" y="285" width="520" height="525" rx="24" class="card"/>
+<rect x="745" y="285" width="520" height="62" rx="22" fill="url(#green)"/>
+<text x="1005" y="325" text-anchor="middle" class="head">GOVERNMENT / AGRICULTURE DATA SOURCES</text>
+<g>
+ <rect x="770" y="370" width="470" height="83" rx="15" fill="#eef6fb" stroke="#a6c5d7" stroke-width="2"/>
+ <text x="790" y="405" class="source">data.gov.in · OGD API</text><text x="790" y="432" class="small">Discover the relevant mandi-price resource; check API access</text>
+ <rect x="770" y="465" width="470" height="83" rx="15" fill="#f2f7ed" stroke="#afc9a4" stroke-width="2"/>
+ <text x="790" y="500" class="source">AGMARKNET</text><text x="790" y="527" class="small">Agricultural market portal / upstream data source context</text>
+ <rect x="770" y="560" width="470" height="83" rx="15" fill="#eef6fb" stroke="#a6c5d7" stroke-width="2"/>
+ <text x="790" y="595" class="source">IMD · Official API platform</text><text x="790" y="622" class="small">Weather forecasts, observations and advisories · separate source</text>
+ <rect x="770" y="655" width="470" height="62" rx="15" fill="#f2f7ed" stroke="#afc9a4" stroke-width="2"/>
+ <text x="790" y="682" class="source">eNAM · Government market portal</text><text x="790" y="705" class="small">Portal / authorised integration only after access confirmation</text>
+ <rect x="770" y="729" width="470" height="62" rx="15" fill="#fffaf0" stroke="#d9c18f" stroke-width="2" stroke-dasharray="7 5"/>
+ <text x="790" y="756" class="source">ICAR / Soil Health Card reference portals</text><text x="790" y="779" class="small">Reference information; API access must be confirmed</text>
+</g>
+
+<!-- Intelligence -->
+<rect x="1300" y="300" width="265" height="510" rx="24" class="card"/>
+<rect x="1300" y="300" width="265" height="70" rx="22" fill="url(#green)"/>
+<text x="1432" y="330" text-anchor="middle" class="head">PRAKRUTI VIKAAS</text><text x="1432" y="354" text-anchor="middle" class="head">INTELLIGENCE</text>
+<g>
+ <rect x="1320" y="395" width="225" height="57" rx="13" class="pale"/><text x="1432" y="430" text-anchor="middle" class="label">Nearby mandi compare</text>
+ <rect x="1320" y="465" width="225" height="57" rx="13" class="pale"/><text x="1432" y="500" text-anchor="middle" class="label">Price trend inputs</text>
+ <rect x="1320" y="535" width="225" height="57" rx="13" class="pale"/><text x="1432" y="570" text-anchor="middle" class="label">Estimated net income</text>
+ <rect x="1320" y="605" width="225" height="57" rx="13" class="pale"/><text x="1432" y="640" text-anchor="middle" class="label">Sell · Wait · Store</text>
+ <rect x="1320" y="675" width="225" height="95" rx="13" fill="#e1f0d5" stroke="#9fbd8b" stroke-width="2"/><text x="1432" y="710" text-anchor="middle" class="label">Explainable farmer</text><text x="1432" y="738" text-anchor="middle" class="label">recommendation</text><text x="1432" y="758" text-anchor="middle" class="small">Farmer decides</text>
+</g>
+
+<!-- Flow arrows -->
+<path d="M320 555H355" class="line"/><text x="337" y="520" text-anchor="middle" class="small">HTTPS</text><text x="337" y="540" text-anchor="middle" class="small">REST</text>
+<path d="M700 550H733" class="line"/>
+<path d="M1265 550H1288" class="line"/>
+<path d="M1432 815V865H177V825" class="line"/>
+<rect x="375" y="850" width="850" height="115" rx="20" fill="#fff" stroke="#9fbd8b" stroke-width="2"/>
+<text x="800" y="885" text-anchor="middle" class="label">DATA NORMALIZATION &amp; QUALITY CHECKS</text>
+<text x="405" y="920" class="small">Crop / market mapping</text><text x="610" y="920" class="small">Unit normalization</text><text x="820" y="920" class="small">Schema &amp; timestamp checks</text><text x="1060" y="920" class="small">Offline cache</text>
+<rect x="540" y="935" width="520" height="25" rx="12" fill="#e7f2d5"/>
+<text x="800" y="954" text-anchor="middle" class="small">LIVE  ·  CACHED  ·  STALE  ·  UNAVAILABLE</text>
+
+<rect x="0" y="990" width="1600" height="50" fill="#17492c"/>
+<text x="55" y="1022" fill="#fff" font-family="Arial" font-size="19" font-weight="700">Developed &amp; Designed by Adithya Vishnubhatla</text>
+<text x="1545" y="1022" text-anchor="end" fill="#e5f1dd" font-family="Arial" font-size="16">Illustrative architecture · validate every API before production</text>
+</svg>
