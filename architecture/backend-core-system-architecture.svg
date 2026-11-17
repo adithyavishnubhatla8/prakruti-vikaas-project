@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1140" viewBox="0 0 1600 1140" role="img" aria-labelledby="title desc">
+<title id="title">PRAKRUTI VIKAAS 3.0 — Backend Core System Architecture</title>
+<desc id="desc">Dark technical reference diagram showing the Android client, secure API gateway and orchestration, application service boundaries, Bhoomi AI multi-agent workflow, external agricultural data integrations, local and remote persistence options, asynchronous processing, analytics, deployment and security controls.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061311"/><stop offset=".55" stop-color="#071d1b"/><stop offset="1" stop-color="#030a0b"/></linearGradient>
+ <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0d2925"/><stop offset="1" stop-color="#081a19"/></linearGradient>
+ <linearGradient id="green" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#00c878"/><stop offset="1" stop-color="#73f45b"/></linearGradient>
+ <style>
+ .title{font:700 42px Arial,sans-serif;fill:#39f3a0;letter-spacing:.3px}.subtitle{font:20px Arial,sans-serif;fill:#c4e9df}
+ .section{font:700 23px Arial,sans-serif;fill:#ecfff8}.head{font:700 18px Arial,sans-serif;fill:#f3fff9}
+ .body{font:16px Arial,sans-serif;fill:#d5eee5}.small{font:14px Arial,sans-serif;fill:#9cc9ba}
+ .green{fill:#6bf18b}.cyan{fill:#54e8ed}.purple{fill:#d49cff}.orange{fill:#f4c77b}
+ .panel{fill:url(#panel);stroke:#13cda0;stroke-width:1.7}.module{fill:#0b2422;stroke:#1d9e8b;stroke-width:1.4}
+ .module2{fill:#111f2c;stroke:#b16ef0;stroke-width:1.5}
+ .module3{fill:#10251e;stroke:#65dc78;stroke-width:1.4}
+ .line{fill:none;stroke:#47e8a0;stroke-width:3;marker-end:url(#arrow)}
+ .line2{fill:none;stroke:#6bdde8;stroke-width:2.5;marker-end:url(#arrow2)}
+ .rule{stroke:#1e6253;stroke-width:1}
+ </style>
+ <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0L10 5.5L0 11Z" fill="#47e8a0"/></marker>
+ <marker id="arrow2" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto"><path d="M0 0L10 5.5L0 11Z" fill="#6bdde8"/></marker>
+</defs>
+<rect width="1600" height="1140" fill="url(#bg)"/>
+<path d="M0 0H1600V8H0Z" fill="url(#green)"/>
+<g opacity=".15" fill="#35cf82"><path d="M0 0h180Q110 45 35 90H0Z"/><path d="M1600 0h-180q70 45 145 90h35Z"/></g>
+<text x="42" y="62" class="title">PRAKRUTI VIKAAS 3.0</text>
+<text x="42" y="96" class="subtitle">BACKEND CORE SYSTEM ARCHITECTURE · SECURE · MODULAR · OFFLINE-AWARE · AGENTIC AI</text>
+<rect x="1280" y="32" width="280" height="48" rx="22" fill="#0b3028" stroke="#2eeaa0" stroke-width="1.5"/>
+<text x="1420" y="62" text-anchor="middle" class="head">BACKEND REFERENCE VIEW</text>
+
+<!-- TOP ROW -->
+<rect x="24" y="130" width="330" height="300" rx="20" class="panel"/>
+<text x="48" y="166" class="section">1 · ANDROID CLIENT</text>
+<rect x="45" y="186" width="126" height="220" rx="20" fill="#06100f" stroke="#65dc9b" stroke-width="2"/>
+<rect x="54" y="198" width="108" height="195" rx="13" fill="#eaf7ed"/>
+<circle cx="108" cy="226" r="19" fill="#d5f3d9"/><path d="M108 240q-17-16-1-29q15 11 1 29q6-18 18-20q-4 16-18 20" fill="#258a50"/>
+<text x="108" y="273" text-anchor="middle" style="font:700 12px Arial;fill:#12452c">PRAKRUTI</text>
+<text x="108" y="288" text-anchor="middle" style="font:700 12px Arial;fill:#12452c">VIKAAS</text>
+<rect x="64" y="305" width="88" height="10" rx="5" fill="#cce9cf"/><rect x="64" y="321" width="88" height="10" rx="5" fill="#cce9cf"/><rect x="64" y="337" width="88" height="10" rx="5" fill="#cce9cf"/>
+<text x="190" y="204" class="head">Presentation</text>
+<text x="190" y="227" class="small">Kotlin · Jetpack Compose</text>
+<text x="190" y="259" class="head">Client capabilities</text>
+<text x="190" y="283" class="body">• HTTPS API calls</text>
+<text x="190" y="306" class="body">• Camera / image upload</text>
+<text x="190" y="329" class="body">• Voice / AI interaction</text>
+<text x="190" y="352" class="body">• Offline action queue</text>
+<text x="190" y="375" class="body">• Selected locale</text>
+<rect x="44" y="410" width="288" height="1" class="rule"/>
+<text x="188" y="422" text-anchor="middle" class="small">No mandatory login · farmer-controlled app</text>
+
+<rect x="382" y="130" width="340" height="300" rx="20" class="panel"/>
+<text x="406" y="166" class="section">2 · API GATEWAY</text>
+<text x="406" y="191" class="small">Secure integration &amp; request orchestration</text>
+<rect x="402" y="208" width="300" height="43" rx="11" class="module"/>
+<text x="552" y="235" text-anchor="middle" class="head">HTTPS Gateway / Proxy</text>
+<rect x="402" y="260" width="300" height="43" rx="11" class="module"/>
+<text x="552" y="287" text-anchor="middle" class="head">Request Validation · Rate Limits</text>
+<rect x="402" y="312" width="300" height="43" rx="11" class="module"/>
+<text x="552" y="339" text-anchor="middle" class="head">Feature Router · API Adapters</text>
+<rect x="402" y="364" width="300" height="43" rx="11" class="module"/>
+<text x="552" y="391" text-anchor="middle" class="head">Bhoomi Orchestration Entry</text>
+<text x="552" y="422" text-anchor="middle" class="small">Server-side secrets only where proxy is deployed</text>
+
+<rect x="750" y="130" width="500" height="300" rx="20" class="panel"/>
+<text x="774" y="166" class="section">3 · CORE APPLICATION SERVICES</text>
+<rect x="772" y="187" width="218" height="65" rx="12" class="module3"/>
+<text x="786" y="212" class="head">Market Service</text><text x="786" y="235" class="small">All-India crop &amp; mandi data</text>
+<rect x="1003" y="187" width="225" height="65" rx="12" class="module3"/>
+<text x="1017" y="212" class="head">Farm Service</text><text x="1017" y="235" class="small">Plots · crops · journal · harvest</text>
+<rect x="772" y="264" width="218" height="65" rx="12" class="module3"/>
+<text x="786" y="289" class="head">Weather Service</text><text x="786" y="312" class="small">Forecasts · advisories · cache</text>
+<rect x="1003" y="264" width="225" height="65" rx="12" class="module3"/>
+<text x="1017" y="289" class="head">AI / Vision Service</text><text x="1017" y="312" class="small">Gemini proxy · scanner · doctor</text>
+<rect x="772" y="341" width="218" height="65" rx="12" class="module3"/>
+<text x="786" y="366" class="head">Finance Service</text><text x="786" y="389" class="small">Expenses · receipts · net return</text>
+<rect x="1003" y="341" width="225" height="65" rx="12" class="module3"/>
+<text x="1017" y="366" class="head">Storage / Alert Service</text><text x="1017" y="389" class="small">ROI · spoilage · notifications</text>
+
+<rect x="1278" y="130" width="298" height="300" rx="20" class="module2"/>
+<text x="1302" y="166" class="section">4 · AGENTIC AI ENGINE</text>
+<rect x="1300" y="186" width="254" height="48" rx="11" class="module2"/>
+<text x="1427" y="216" text-anchor="middle" class="head">BhoomiAgentOrchestrator</text>
+<g>
+ <rect x="1300" y="246" width="254" height="32" rx="8" class="module2"/><text x="1313" y="267" class="body">Market Analysis Agent</text>
+ <rect x="1300" y="284" width="254" height="32" rx="8" class="module2"/><text x="1313" y="305" class="body">Forecast &amp; Risk Agent</text>
+ <rect x="1300" y="322" width="254" height="32" rx="8" class="module2"/><text x="1313" y="343" class="body">Storage &amp; Finance Agent</text>
+ <rect x="1300" y="360" width="254" height="32" rx="8" class="module2"/><text x="1313" y="381" class="body">Decision &amp; Coordination Agent</text>
+</g>
+<text x="1427" y="416" text-anchor="middle" class="small">Farmer consent before external enquiry</text>
+
+<!-- flow arrows top -->
+<path d="M354 280H378" class="line"/>
+<path d="M722 280H746" class="line"/>
+<path d="M1250 280H1274" class="line2"/>
+
+<!-- MIDDLE ROW -->
+<rect x="24" y="454" width="350" height="342" rx="20" class="panel"/>
+<text x="48" y="490" class="section">5 · EXTERNAL DATA SOURCES</text>
+<text x="48" y="516" class="small">Existing or access-dependent integrations</text>
+<g>
+ <rect x="44" y="532" width="310" height="37" rx="9" class="module"/><text x="59" y="556" class="head">data.gov.in · OGD mandi APIs</text>
+ <rect x="44" y="576" width="310" height="37" rx="9" class="module"/><text x="59" y="600" class="head">AGMARKNET · market information</text>
+ <rect x="44" y="620" width="310" height="37" rx="9" class="module"/><text x="59" y="644" class="head">e-NAM · market ecosystem</text>
+ <rect x="44" y="664" width="310" height="37" rx="9" class="module"/><text x="59" y="688" class="head">Open-Meteo · weather</text>
+ <rect x="44" y="708" width="310" height="37" rx="9" class="module"/><text x="59" y="732" class="head">Google Gemini · AI services</text>
+ <rect x="44" y="752" width="310" height="30" rx="8" class="module"/><text x="59" y="773" class="body">Maps · GPS · WDRA / FPO / providers</text>
+</g>
+
+<rect x="398" y="454" width="790" height="342" rx="20" class="panel"/>
+<text x="422" y="490" class="section">6 · DATA &amp; PERSISTENCE LAYER</text>
+<rect x="420" y="515" width="238" height="210" rx="14" class="module3"/>
+<text x="439" y="545" class="head">Android Local Store</text>
+<text x="439" y="574" class="body">Room / SQLite</text>
+<text x="439" y="604" class="small">• Farm &amp; plot records</text>
+<text x="439" y="628" class="small">• Harvest &amp; crop history</text>
+<text x="439" y="652" class="small">• Journal &amp; expenses</text>
+<text x="439" y="676" class="small">• Market / weather cache</text>
+<text x="439" y="700" class="small">• Locale &amp; app preferences</text>
+<rect x="674" y="515" width="238" height="210" rx="14" class="module"/>
+<text x="693" y="545" class="head">Remote Data Access</text>
+<text x="693" y="574" class="body">Existing API adapters</text>
+<text x="693" y="604" class="small">• Government price feeds</text>
+<text x="693" y="628" class="small">• Weather responses</text>
+<text x="693" y="652" class="small">• AI proxy responses</text>
+<text x="693" y="676" class="small">• Verified provider data</text>
+<text x="693" y="700" class="small">• Source / timestamp trace</text>
+<rect x="928" y="515" width="238" height="210" rx="14" class="module"/>
+<text x="947" y="545" class="head">Optional Server Store</text>
+<text x="947" y="574" class="body">Only if configured</text>
+<text x="947" y="604" class="small">• Shared market metadata</text>
+<text x="947" y="628" class="small">• Object / image storage</text>
+<text x="947" y="652" class="small">• Async task state</text>
+<text x="947" y="676" class="small">• Operational audit events</text>
+<text x="947" y="700" class="small">• Backups &amp; retention</text>
+<path d="M658 620H670" class="line2"/><path d="M912 620H924" class="line2"/>
+<text x="793" y="757" text-anchor="middle" class="small">Offline-first client records · remote requests require network access</text>
+
+<rect x="1212" y="454" width="364" height="342" rx="20" class="panel"/>
+<text x="1236" y="490" class="section">7 · CACHE &amp; ASYNC WORK</text>
+<rect x="1234" y="515" width="320" height="78" rx="12" class="module"/>
+<text x="1252" y="544" class="head">Local Cache &amp; Sync Queue</text>
+<text x="1252" y="570" class="small">Pending actions · retry · last refresh</text>
+<rect x="1234" y="606" width="320" height="78" rx="12" class="module"/>
+<text x="1252" y="635" class="head">Scheduled Background Work</text>
+<text x="1252" y="661" class="small">Weather checks · alert refresh · sync</text>
+<rect x="1234" y="697" width="320" height="78" rx="12" class="module2"/>
+<text x="1252" y="726" class="head">Optional Redis / Message Queue</text>
+<text x="1252" y="752" class="small">Scale-out option · only when deployed</text>
+
+<!-- cross-row links -->
+<path d="M374 620H394" class="line2"/>
+<path d="M1188 620H1208" class="line2"/>
+<path d="M598 430V448" class="line"/>
+<path d="M1000 430V448" class="line"/>
+<path d="M1425 430V448" class="line2"/>
+
+<!-- BOTTOM ROW -->
+<rect x="24" y="818" width="965" height="238" rx="20" class="panel"/>
+<text x="48" y="854" class="section">8 · PROCESSING &amp; INTELLIGENCE PIPELINE</text>
+<g>
+ <rect x="44" y="882" width="172" height="112" rx="12" class="module3"/>
+ <text x="130" y="913" text-anchor="middle" class="head">Ingestion</text><text x="130" y="941" text-anchor="middle" class="small">Fetch · parse</text><text x="130" y="963" text-anchor="middle" class="small">source tracking</text>
+ <rect x="232" y="882" width="172" height="112" rx="12" class="module3"/>
+ <text x="318" y="913" text-anchor="middle" class="head">Validation</text><text x="318" y="941" text-anchor="middle" class="small">Schema · units</text><text x="318" y="963" text-anchor="middle" class="small">duplicates · dates</text>
+ <rect x="420" y="882" width="172" height="112" rx="12" class="module3"/>
+ <text x="506" y="913" text-anchor="middle" class="head">Calculation</text><text x="506" y="941" text-anchor="middle" class="small">Net income · distance</text><text x="506" y="963" text-anchor="middle" class="small">transport · ROI</text>
+ <rect x="608" y="882" width="172" height="112" rx="12" class="module2"/>
+ <text x="694" y="913" text-anchor="middle" class="head">Forecast &amp; Risk</text><text x="694" y="941" text-anchor="middle" class="small">Trend · uncertainty</text><text x="694" y="963" text-anchor="middle" class="small">perishability</text>
+ <rect x="796" y="882" width="172" height="112" rx="12" class="module3"/>
+ <text x="882" y="913" text-anchor="middle" class="head">Decision Output</text><text x="882" y="941" text-anchor="middle" class="small">Compare · explain</text><text x="882" y="963" text-anchor="middle" class="small">farmer chooses</text>
+ <path d="M216 938H228" class="line"/><path d="M404 938H416" class="line"/><path d="M592 938H604" class="line2"/><path d="M780 938H792" class="line"/>
+</g>
+<text x="506" y="1030" text-anchor="middle" class="small">Observed prices ≠ forecasts · unknown costs remain visible · no fabricated values</text>
+
+<rect x="1010" y="818" width="566" height="238" rx="20" class="panel"/>
+<text x="1034" y="854" class="section">9 · DEPLOYMENT, SECURITY &amp; OPERATIONS</text>
+<g>
+ <rect x="1030" y="882" width="160" height="66" rx="11" class="module"/>
+ <text x="1110" y="908" text-anchor="middle" class="head">Build / CI</text><text x="1110" y="930" text-anchor="middle" class="small">Gradle · tests</text>
+ <rect x="1200" y="882" width="160" height="66" rx="11" class="module"/>
+ <text x="1280" y="908" text-anchor="middle" class="head">Monitoring</text><text x="1280" y="930" text-anchor="middle" class="small">logs · metrics</text>
+ <rect x="1370" y="882" width="184" height="66" rx="11" class="module"/>
+ <text x="1462" y="908" text-anchor="middle" class="head">Deployment</text><text x="1462" y="930" text-anchor="middle" class="small">only configured targets</text>
+ <rect x="1030" y="962" width="250" height="66" rx="11" class="module2"/>
+ <text x="1155" y="988" text-anchor="middle" class="head">Secrets &amp; Transport Security</text><text x="1155" y="1010" text-anchor="middle" class="small">TLS · server-side keys · no public secrets</text>
+ <rect x="1290" y="962" width="264" height="66" rx="11" class="module2"/>
+ <text x="1422" y="988" text-anchor="middle" class="head">Privacy &amp; Farmer Consent</text><text x="1422" y="1010" text-anchor="middle" class="small">local-first · explicit external enquiry</text>
+</g>
+
+<rect x="24" y="1072" width="1552" height="48" rx="13" fill="#0b2822" stroke="#2fbc83" stroke-width="1.2"/>
+<text x="48" y="1102" class="small">ARCHITECTURE NOTE: Logical service boundaries are shown for the complete product. Optional remote database, Redis, queues and deployment targets are not claims of current deployment; verify each component against the live implementation.</text>
+</svg>
